@@ -28,11 +28,29 @@
 }
 
 .simenvideo {
-    width: 400px;
-    height: 400px;
+    width: 402px;
+    height: 402px;
     border-radius: 2%;
 }
 
 .header3 {
     margin: 10px;
 }
+
+.center {
+    height: 100%; 
+    width: 100%; 
+    font-size: 80px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.joakimContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.joakimFunFact

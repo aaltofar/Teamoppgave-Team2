@@ -6,30 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js" defer></script>
 </head>
-<body onload="openSimen()">
-
+<body>
+    <button id="hei" onclick="blankall()">reset</button>
     <div class="container">
-        <div onclick="openJoakim()" class="box" id="joakim">
-            <h1>Trykk for å finne ut mer om Joakim</h1>
+        <div onclick="openJoakim()" class="box joakim" id="joakim">
+            <div id="intro" class="center">Joakim</div>
         </div>
 
         <div onclick="openLars()" class="box" id="lars">
-           <h3 class="header3">Lars</h3>
+           <div class="center">Lars</div>
 
         </div>
 
-        <div onclick="åpenmarius()" class="box" id="marius">
+        <div onclick="openMarius()" class="box" id="marius">
                  Marius      
         </div>
 
 
         <div onclick="openSimen()" class="box" id="simen">
-            simen
-
+            <div class="center">Simen</div>
         </div>
 
     </div>
+
+    </div>
+    <script>
+        function blankall(){
+            document.getElementById("simen").innerHTML = "Simen";
+            document.getElementById("joakim").innerHTML = "Joakim";
+            document.getElementById("marius").innerHTML = "Marius";
+            document.getElementById("lars").innerHTML = "Lars";
+            console.log('ok')
+        }
+
+        function openLars() {
+            document.getElementById('lars').innerHTML = /*HTML*/`
+                <p style="font-size: 20px; text-align: center; ">
+                    Lars fun fact asdadadadadad asdasdadasd
+                    asdadadasd asdadasdada asdasdadadadada
+                </p>
+                <img src="">
+                
+            `;
+        
+        }
+
+        function openSimen() {
+            document.getElementById('simen').innerHTML = /*HTML*/ `
+            <div>
+                <video class="simenvideo" controls muted>
+                <source src="https://cdn.discordapp.com/attachments/1005033299334398115/1008720444725141675/trim.2F15BF93-DFAE-4184-8BD0-7A28CFFDFDD6.mov">
+                </video>
+            </div>
+            `;
+        }
+
+
+// Simen sin kode
+//------------------------------------------------------------------------------------
+        function openJoakim() {
+            document.getElementById('joakim').innerHTML = /*HTML*/`
+                <div class=joakimContainer>
+                    <div class="joakimFunFact">
+                        Joakim er en linguistisk trylleknustner. </br> 
+                        Han kan faktisk snakke flytende svensk!
+                    </div>
+                    
+                    <img class=flagg src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png" alt="Svensk flagg">
+                </div>
+                    `;
+        }
+    
+        
+//------------------------------------------------------------------------------------
+
+
+    function openMarius() {
+        document.getElementById('marius').innerHTML = /*HTML*/`
+            <div style="font-size: 30px; text-align: center;">
+                <div class=joakimContainer>
+                    <p>
+                        Marius fikk i andre klasse en benk med 25 unger på lille toa pulviresert. Har i dag stål tå.
+                    
+                    </p>
+                    
+                    <img style="width:300px;height:300px; class=simenvideo src="img.fruugo.com/product/2/94/96280942_max.jpg">
+                    
+                </div>
+            
+            </div>
+            
+        `;
+    }  
+
+</script>
+
 </body>
 </html>
