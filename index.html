@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Team 2</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <button id="hei" onclick="blankall()">reset</button>
     <div class="container">
         <div onclick="openJoakim()" class="box joakim" id="joakim">
             <div id="intro" class="center">Joakim</div>
@@ -20,7 +23,7 @@
         </div>
 
         <div onclick="openMarius()" class="box" id="marius">
-                 Marius      
+            <div class="center">Marius</div>
         </div>
 
 
@@ -32,22 +35,15 @@
 
     </div>
     <script>
-        function blankall(){
-            document.getElementById("simen").innerHTML = "Simen";
-            document.getElementById("joakim").innerHTML = "Joakim";
-            document.getElementById("marius").innerHTML = "Marius";
-            document.getElementById("lars").innerHTML = "Lars";
-            console.log('ok')
-        }
 
         function openLars() {
             document.getElementById('lars').innerHTML = /*HTML*/`
-                <p style="font-size: 20px; text-align: center; ">
-                    Lars fun fact asdadadadadad asdasdadasd
-                    asdadadasd asdadasdada asdasdadadadada
-                </p>
-                <img src="">
-                
+                <div class=joakimContainer>
+                    <p style="font-size: 20px; text-align: center; ">
+                        Lars har en rå motorsykkel!
+                    </p>
+                    <img class=flagg src="https://www.thebikemarket.co.uk/media/2273278/yamaha-mt-09-sp-gjwh.jpg?width=640" alt="Svensk flagg">
+                </div>
             `;
         
         }
@@ -55,6 +51,7 @@
         function openSimen() {
             document.getElementById('simen').innerHTML = /*HTML*/ `
             <div>
+                <div class="litentekst">Også kjent som verdensmester i 10m sofa med backflip</div>
                 <video class="simenvideo" controls muted>
                 <source src="https://cdn.discordapp.com/attachments/1005033299334398115/1008720444725141675/trim.2F15BF93-DFAE-4184-8BD0-7A28CFFDFDD6.mov">
                 </video>
@@ -74,11 +71,10 @@
                     </div>
                     
                     <img class=flagg src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Flag_of_Sweden.svg/1200px-Flag_of_Sweden.svg.png" alt="Svensk flagg">
+                    <audio class="audiotag" src="https://sharingsweden.se/app/uploads/2015/11/Swedish-National-Anthem-320kbps.mp3" controls></audio>
                 </div>
                     `;
         }
-    
-        
 //------------------------------------------------------------------------------------
 
 
@@ -86,12 +82,12 @@
         document.getElementById('marius').innerHTML = /*HTML*/`
             <div style="font-size: 30px; text-align: center;">
                 <div class=joakimContainer>
-                    <p>
-                        Marius fikk i andre klasse en benk med 25 unger på lille toa pulviresert. Har i dag stål tå.
+                    <p class="joakimFunFact">
+                        Marius fikk i andre klasse en benk med 25 unger på lille toa. pulviresert tåa. Har i dag stål tå.
                     
                     </p>
                     
-                    <img style="width:300px;height:300px; class=simenvideo src="img.fruugo.com/product/2/94/96280942_max.jpg">
+                    <img class=flagg style= "padding: 0px 50px 50px;" src="http://img.fruugo.com/product/2/94/96280942_max.jpg" alt="Svensk flagg">
                     
                 </div>
             

@@ -1,18 +1,27 @@
+body {
+    /* background: linear-gradient(45deg, blue, purple); */
+    /* background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%); */
+    background: rgb(146,97,171);
+    /* background: radial-gradient(circle, rgba(146,97,171,1) 0%, rgba(249,148,168,1) 100%); */
+    background: radial-gradient(circle, rgb(72, 9, 104)0%, rgba(249,148,168,1) 100%);
+}
+
 .box {
-    background-color: lightgrey;
+    background-color: hotpink;
     width: 400px;
     height: 400px;
-    border: 10px black solid;
+    border: solid 3px lightskyblue;
+    /* border: ridge 10px pink; */
     margin: 10px;
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 .box:hover {
-    background-color: aquamarine;
+    background-color: lightskyblue;
 }
 
 .box:active {
-    background-color: #3e8e41;
+    background-color: rgb(146,97,171);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
@@ -23,13 +32,18 @@
 	grid-template-rows: auto auto;
     flex-direction: row;
     justify-content: center;
+    font-family: 'DynaPuff', cursive;
+    text-shadow: orange;
+    color: yellow;
+    width: 100vw;
+    
    
     
 }
 
 .simenvideo {
     width: 402px;
-    height: 402px;
+    height: 293px;
     border-radius: 2%;
 }
 
@@ -44,6 +58,7 @@
     display: flex; 
     justify-content: center;
     align-items: center;
+    text-shadow: -1px -1px 0 orange, 5px -1px 0 orange, -1px 5px 0 orange, 5px 5px 0 orange;
 }
 
 .joakimContainer {
@@ -53,4 +68,16 @@
     padding: 10px;
 }
 
-.joakimFunFact
+.joakimFunFact {
+    font-size: x-large;
+}
+
+.audiotag {
+    height: 25px;
+    align-items: center;
+}
+
+.litentekst {
+    margin: 10px;
+    font-size: x-large;
+}
